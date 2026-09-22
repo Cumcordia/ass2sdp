@@ -12,10 +12,10 @@ func main(){
 }
 
 func runFactoryMethodDemo() {
-	creators := []*factory.EnemyCreator{
-		&factory.NewGoblinCreator().EnemyCreator,
-		&factory.NewSkeletonCreator().EnemyCreator,
-		&factory.NewSlimeCreator().EnemyCreator,
+	creators := []factory.Spawner{
+		factory.NewGoblinCreator(),
+		factory.NewSkeletonCreator(),
+		factory.NewSlimeCreator(),
 	}
 
 	for _, c := range creators {

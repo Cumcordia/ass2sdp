@@ -8,6 +8,10 @@ type Enemy interface {
 	HP() int
 }
 
+type Spawner interface{
+	Spawn() string
+}
+
 type creator interface {
 	createEnemy() Enemy
 }

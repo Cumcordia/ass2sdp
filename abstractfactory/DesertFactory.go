@@ -8,6 +8,6 @@ func (DesertFactory) CreateEnemy() Enemy{
 func (DesertFactory) CreateSoundtrack() Soundtrack{
 	return DesertSoundtrack{}
 }
-func (DesertFactory) CreateWorld() Terrain{
-	return &DesertTerrain{}
+func (DesertFactory) CreateTerrain() Terrain{
+	return DesertTerrain{}
 }

@@ -15,7 +15,7 @@ func NewWorldLoader(factory WorldFactory) *WorldLoader{
 
 func (w *WorldLoader) LoadWorld() string{
 	enemy := w.factory.CreateEnemy()
-	terrain := w.factory.CreateWorld()
+	terrain := w.factory.CreateTerrain()
 	soundtrack := w.factory.CreateSoundtrack()
 
 	return fmt.Sprint(terrain.Type(), enemy.Name(), enemy.Attack(), soundtrack.Track())

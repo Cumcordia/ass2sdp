@@ -8,6 +8,6 @@ func (IceFactory) CreateEnemy() Enemy {
 func (IceFactory) CreateSoundtrack() Soundtrack {
 	return IceSoundtrack{}
 }
-func (IceFactory) CreateWorld() Terrain {
+func (IceFactory) CreateTerrain() Terrain {
 	return IceTerrain{}
 }

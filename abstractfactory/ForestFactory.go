@@ -5,7 +5,7 @@ type ForestFactory struct{}
 func (ForestFactory) CreateEnemy() Enemy{
 	return ForestGoblin{}
 }
-func (ForestFactory) CreateWorld() Terrain{
+func (ForestFactory) CreateTerrain() Terrain{
 	return ForestTerrain{}
 }
 func (ForestFactory) CreateSoundtrack() Soundtrack{
